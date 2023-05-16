@@ -37,7 +37,7 @@ pip3 install pygame -i https://pypi.douban.com/simple
     │       ├── Video.py------------------：视频监控脚本
     │       ├── __init__.py---------------：防止报错的填充文件
     │       └── pip_auto_install.py-------：pip自动安装程序
-    │       └── music_player.py-------：音乐播放器程序
+    │       └── music_player.py-----------：音乐播放器程序
     ├── README.md-------------------------：你现在看的
     └── main.py---------------------------：主文件
 ```
