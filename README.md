@@ -1,5 +1,5 @@
 这是电脑作死-365(G-365)的官方安装程序： 
-# 这是G-365的V0.0.8版本
+# 这是G-365的V0.0.1版本
 首先，你需要安装依赖库
 ```shell
 pip3 install opencv-python -i https://pypi.douban.com/simple/
