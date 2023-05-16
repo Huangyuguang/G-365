@@ -1,5 +1,5 @@
 这是电脑作死-365(G-365)的官方安装程序： 
-# 这是G-365的V0.0.1版本
+# 这是G-365的V0.0.2版本
 首先，你需要安装依赖库
 ```shell
 pip3 install opencv-python -i https://pypi.douban.com/simple/
@@ -16,10 +16,10 @@ pip3 install pygame -i https://pypi.douban.com/simple
     2.
         默认运行的是你的主摄像头，若要修改请打开：
         Function_script/plug_in_unit/Video.py的第5行:
-        ```
+        '''python代码[
         # 打开默认的摄像头
         cap = cv2.VideoCapture(0)
-        ```
+        ]'''
         其中cv2.VudeoCapture(这里是你的摄像头编号，默认0开始)
 ````
 只要你读完了README.md，我就相信你可以愉快的使用啦~~~~
