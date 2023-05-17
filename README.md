@@ -41,6 +41,7 @@ pip3 install requests -i https://pypi.douban.com/simple
     │       └── pip_auto_install.py-------：pip自动安装程序
     │       └── music_player.py-----------：音乐播放器程序
     │       └── spider.py-----------------：爬虫程序
+    │       └── __pycache__---------------：python的调用文件
     ├── .DS_store-------------------------：mac_os自己生成的
     ├── .idea-----------------------------：PyCharm CE生成的
     ├── README.md-------------------------：你现在看的
