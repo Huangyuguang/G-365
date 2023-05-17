@@ -1,10 +1,12 @@
 这是电脑作死-365(G-365)的官方安装程序： 
-# 这是G-365的V0.0.2版本
+# 这是G-365的V0.0.3版本
 首先，你需要安装依赖库
 ```shell
 pip3 install opencv-python -i https://pypi.douban.com/simple/
 pip3 install numpy -i https://pypi.douban.com/simple/
 pip3 install pygame -i https://pypi.douban.com/simple
+pip3 install beautifulsoup4 -i https://pypi.douban.com/simple
+pip3 install requests -i https://pypi.douban.com/simple
 ```
 其次，是教程：
 ````
@@ -38,6 +40,9 @@ pip3 install pygame -i https://pypi.douban.com/simple
     │       ├── __init__.py---------------：防止报错的填充文件
     │       └── pip_auto_install.py-------：pip自动安装程序
     │       └── music_player.py-----------：音乐播放器程序
+    │       └── spider.py-----------------：爬虫程序
+    ├── .DS_store-------------------------：mac_os自己生成的
+    ├── .idea-----------------------------：PyCharm CE生成的
     ├── README.md-------------------------：你现在看的
     └── main.py---------------------------：主文件
 ```
