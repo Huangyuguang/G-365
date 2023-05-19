@@ -16,6 +16,9 @@ root.title('音乐播放器')
 class Musicplayer:
     # 初始化函数
     def __init__(self,window):
+        self.volume = None
+        self.volume_root = None
+        self.button_volume = None
         self.button_unpause = None
         self.button_pause = None
         self.button_stop = None
@@ -49,6 +52,13 @@ class Musicplayer:
     @staticmethod
     def unpause( ):
         pygame.mixer.music.unpause()
+    def volume_r( self ):
+        self.volume_root = tk.Tk()
+        self.volume_root.geometry('200x70')
+        self.volume_root.title('调节音量')
+        self.volume = ttk.Scale (self.volume_root, from_ = 0 , to = 100 , orient = "horizontal" , command = self.change_volume ).pack()
+        self.volume = ttk.Button(self.volume_root,text = '关闭',command = self.close_volume).pack()
+        self.volume_root.mainloop()
     def button( self ):
         self.button_choose = ttk.Button(self.root,text = '选择文件',command = self.choose_file)
         self.button_choose.pack()
@@ -60,5 +70,12 @@ class Musicplayer:
         self.button_pause.pack ( )
         self.button_unpause = ttk.Button ( self.root , text = '继续' , command = self.unpause )
         self.button_unpause.pack ( )
+        self.button_volume = ttk.Button ( self.root , text = '调节音量' , command = self.volume_r )
+        self.button_volume.pack ( )
+    @staticmethod
+    def change_volume(volume):
+        pygame.mixer.music.set_volume(float(volume)/100)
+    def close_volume( self ):
+        self.volume_root.destroy()
 #创建Musicplayer类的实例并将tk窗口对象作为参数传入
 Musicplayer(root)
